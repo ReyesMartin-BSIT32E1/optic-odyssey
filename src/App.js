@@ -9,6 +9,8 @@ function App() {
     <ul className="no-bullets"> 
        
         <li className="logo"><img src="log.png" alt="Logo"/></li>
+
+        <li><a href="book.html">Book Us</a></li>
       
         <li><a href="Gallery.html">Gallery</a></li>
         

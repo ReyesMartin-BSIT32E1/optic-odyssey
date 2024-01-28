@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boook Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body bgcolor="#e9e9e9">
+<div>
+
+    <ul class="no-bullets" class=""> 
+       
+        <li class="logo"><img src="log.png" alt="Logo"></li>
+        
+        <li><a href="#bookus">Book Us</a></li>
+      
+        <li><a href="Gallery.html">Gallery</a></li>
+        
+        <li><a href="oldindex.html">Home</a></li>
+    </ul>
+    <img src="header.JPG" class="nav-image">
+    
+    <div>
+    
+      <br>
+      <br>
+      <br>
+  </div>
+  
+  <div>
+      <form action="" method="post" onsubmit="showPopup()">
+        <table>
+          <tr>
+              <td>
+                
+                  <h1>Contact Information</h1>
+                  <h3>Email: <input type="email" name="email" required placeholder="enter your email"></h3>
+                  <h3>Name: <input type="text" name="name" required placeholder="enter your name"></h3>      
+                  <h3>Contact No.: <input type="number" name="number" required placeholder="enter your number"></h3>    
+              </td>
+              <td>
+                  <h1>Address</h1>
+                  <h3>Address Line: <input type="text" name="line1" required placeholder=""></h3>
+                  <h3>City: <input type="text" name="city" required placeholder=""></h3>
+                  <h3>Zip code: <input type="text" name="zip" required placeholder=""></h3>
+              </td>
+          </tr>
+          <tr>
+            <td>
+                  <h1>Details of the event</h1>
+                  <h3>What is the event: <input type="text" name="event" required placeholder=""></h3>
+                  <h3>When is the Event: <input type="date" name="date" required placeholder=""></h3>
+                  <h3>Specific Photographer: <input type="text" name="photographer"></h3>
+            </td>
+            <td>
+                  <h1>Address of the event</h1>
+                  <h3>Address Line: <input type="text" name="line2" required placeholder=""></h3>
+                  <h3>City: <input type="text" name="city2" required placeholder=""></h3>
+                  <h3>Zip code: <input type="text" name="zip2" required placeholder=""></h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+             <input type="submit" name="Book" value="Book Now" class="form-btn">
+            </td>
+          </tr>
+        </table>
+      </form>
+      
+      <!-- Popup for success message -->
+      <div id="successPopup" class="popup">
+          <p><?php echo $successMessage; ?></p>
+          <button onclick="hidePopup()">Close</button>
+      </div>
+  </div>
+  <br><br><br><br><br><br><br>
+  <div>
+    <footer>
+      <script>
+            window.addEventListener('scroll', function() {
+      var footer = document.querySelector('footer');
+      var scrollPosition = window.scrollY;
+
+      if (scrollPosition > 400) { 
+        footer.style.display = 'block';
+      } else {
+        footer.style.display = 'none';
+      }
+    });
+
+    function showPopup() {
+    alert("Booking request Sent!");
+}
+      </script>
+        <div class="image-buttons">
+          <a href="https://www.facebook.com"><img src="Face.png"  class="small-button"></a>
+          <a href="https://www.instagram.com"><img src="Insta.png"  class="small-button"></a>
+          <a href="https://twitter.com/?lang=en"><img src="X.png"  class="small-button"></a>
+        </div>
+    </footer>
+  </div>
+</body>
+</html>
