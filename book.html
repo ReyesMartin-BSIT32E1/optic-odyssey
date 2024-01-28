@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Boook Us</title>
+    <title>Book Us</title>
     <link rel="stylesheet" href="style.css">
     <style>
 
@@ -79,31 +79,10 @@
           </tr>
         </table>
       </form>
-      
-      <!-- Popup for success message -->
-      <div id="successPopup" class="popup">
-          <p><?php echo $successMessage; ?></p>
-          <button onclick="hidePopup()">Close</button>
-      </div>
   </div>
   <br><br><br><br><br><br><br>
   <div>
-    <footer>
-      <script>
-            window.addEventListener('scroll', function() {
-      var footer = document.querySelector('footer');
-      var scrollPosition = window.scrollY;
-
-      if (scrollPosition > 400) { 
-        footer.style.display = 'block';
-      } else {
-        footer.style.display = 'none';
-      }
-    });
-
-    function showPopup() {
-    alert("Booking request Sent!");
-}
+    <div class="footer">
       </script>
         <div class="image-buttons">
           <a href="https://www.facebook.com"><img src="Face.png"  class="small-button"></a>
