@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css"> 
+<style>
+
+
+div.gallery {
+  border: 0.5px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix {
+      clear: both;
+    }
+
+</style>
+
+<!--CSS ends here -->
+
+</head>
+<body bgcolor="#e9e9e9">
+<div>
+   
+  <ul class="no-bullets" class=""> 
+       
+    <li class="logo"><img src="log.png" alt="Logo"></li>
+  
+    <li><a href="#gallery">Gallery</a></li>
+    
+    <li><a href="oldindex.html">Home</a></li>
+</ul>
+<img src="header.JPG" class="nav-image">
+</div>
+
+<br>
+
+<div>
+    
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+  function openImage(imgSrc, altText) {
+    var modal = document.getElementById('imageModal');
+    var modalImg = document.getElementById('enlargedImg');
+    modal.style.display = 'block';
+    modalImg.src = imgSrc;
+    modalImg.alt = altText;
+  }
+  function closeImageModal() {
+    document.getElementById('imageModal').style.display = 'none';
+  }
+</script>
+<div class="responsive">
+  <div class="gallery">
+    <img src="Flower1.JPG" alt="Alt1" onclick="openImage('Flower1.JPG', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Shot taken by: Justin</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="flower2.JPG" alt="Alt1" onclick="openImage('Flower2.JPG', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Shot taken by: Justin</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="flower3.JPG" alt="Alt1" onclick="openImage('Flower3.JPG', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Shot taken by: Justin</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="control.JPG" alt="Alt1" onclick="openImage('control.JPG', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Shot taken by: Justin</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+
+
+
+
+
+<br>
+<br>
+<div class="clearfix"></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="water1.JPG" alt="Alt1" onclick="openImage('water1.JPG', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Shot taken by: Justin</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="water3.JPG" alt="Alt1" onclick="openImage('water3.JPG', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Shot taken by: Justin</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="peepo1.JPG" alt="Alt1" onclick="openImage('peepo1.JPG', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Shot taken by: Justin</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="peepo2.JPG" alt="Alt1" onclick="openImage('peepo2.JPG', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Shot taken by: Justin</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="akali.png" alt="Alt1" onclick="openImage('akali.png', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Drawn by: Mark</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="water2.JPG" alt="Alt1" onclick="openImage('water2.JPG', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Shot taken by: Justin</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <img src="Electricity.JPG" alt="Alt1" onclick="openImage('Electricity.JPG', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Shot taken by: Justin</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+            
+<div class="responsive">
+  <div class="gallery">
+    <img src="gwen.png" alt="Alt1" onclick="openImage('gwen.png', 'Alt1')" style="width: 600; height: 400;">
+    <div class="desc">Drawn by: Mark</div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <img id="enlargedImg" class="modal-content">
+</div>
+    <div class="clearfix"></div>
+    
+<div>
+<div class="footer">
+    <div class="image-buttons">
+        <a href="https://www.facebook.com"><img src="Face.png"  class="small-button"></a>
+        <a href="https://www.instagram.com"><img src="Insta.png"  class="small-button"></a>
+        <a href="https://twitter.com/?lang=en"><img src="X.png"  class="small-button"></a>
+    </div>
+</div>
+
+</body>
+</html>
